@@ -8,8 +8,7 @@ attr_accessor :total, :discount, :title, :price
   end
 
   def add_item(title, price)
-    hash = {}
-    hash[title] = price
+  
     new_total = @total + price
     new_total
   end
