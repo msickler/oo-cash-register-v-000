@@ -13,4 +13,9 @@ attr_accessor :total, :discount, :item, :price
     self.total += price * quantity
   end
 
+  def apply_discount(discount)
+    applied_discount = self.total - discount
+    applied_discount
+  end
+
 end
