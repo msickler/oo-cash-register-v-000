@@ -17,9 +17,9 @@ attr_accessor :total, :discount, :item, :price
     discounted = @total * @discount / 100
     @total = @total - discounted
     if @discount > 0
-      puts "After the discount, the total comes to $#{@total}."
+       "After the discount, the total comes to $#{@total}."
     else @discount = 0
-      puts "There is no discount to apply."
+       "There is no discount to apply."
     end
   end
 
