@@ -6,6 +6,7 @@ attr_accessor :total, :discount, :item, :price, :transaction
     @total = 0
     @discount = discount
     @item = item
+    @transaction = transaction
     @items = []
   end
 
@@ -28,7 +29,7 @@ def items
   @items << @item
 end
 
-def void_last_transaction(transaction)
+def void_last_transaction
   @total = @total - transaction.last
 
 end
